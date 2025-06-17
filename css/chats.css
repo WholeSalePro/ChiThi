@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--header-text);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-right .icons {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--header-text);
+  transition: background-color 0.2s ease;
+  border-radius: 50%;
+}
+
+.header-right .icons:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.chat-list {
+  padding: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 120px);
+}
+
+.chat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.chat-item:hover {
+  background-color: #f2f2f2;
+}
+
+.chat-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.chat-preview {
+  font-size: 0.9rem;
+  color: #555;
+  max-width: 240px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.chat-time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.chat-unread {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--footer-bg);
+  padding: 8px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-btn {
+  font-size: 1.2rem;
+  color: var(--footer-icon);
+}
+
+.footer-btn.active {
+  color: var(--primary-color);
+}
+
+.search-btn {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #cef5f8;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+}

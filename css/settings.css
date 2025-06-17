@@ -1,0 +1,52 @@
+.settings-container {
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.settings-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.settings-container input[type="text"],
+.settings-container input[type="email"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.settings-container button[type="submit"],
+.logout-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+}
+
+.logout-btn:hover,
+.settings-container button[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+}
